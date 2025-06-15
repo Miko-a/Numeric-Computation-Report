@@ -54,16 +54,13 @@ def false_position(x0, x1, eps, max_iter=100):
 ```
 x0 = 1
 x1 = 2
-eps = 1e-6
+eps = 0.001
 ```
 
 ## 7. Output Iterasi
-```
-N     x0         x1       f(x0)     f(x1)       x        f(x)
-0  1.000000  2.000000  -1.000000  2.000000  1.333333  -0.222222
-1  1.333333  2.000000  -0.222222  2.000000  1.400000  -0.040000
-...
-```
+
+![image](https://github.com/user-attachments/assets/593af26a-3c1c-49dc-99f7-8eae017dc180)
+
 
 ---
 
