@@ -12,31 +12,34 @@ Metode **Trapezoidal** adalah pendekatan numerik sederhana untuk menghitung inte
 Sebagai solusi, digunakan **metode Romberg** yang meningkatkan akurasi dengan pendekatan **ekstrapolasi Richardson** terhadap hasil Trapezoidal tanpa harus meningkatkan jumlah subinterval secara ekstrem.
 
 ## 3. Fungsi yang Digunakan
-\[
-f(x) = \frac{1}{1 + x^2}
-\]
 
-Dengan batas integral dari \( a = 0 \) ke \( b = 1 \), nilai eksak integral ini adalah:
-\[
-\int_0^1 \frac{1}{1 + x^2} dx = \arctan(1) = \frac{\pi}{4} \approx 0.7853981634
-\]
+![image](https://github.com/user-attachments/assets/5a4c10e4-9148-4340-8c28-057fb946b162)
+
+
+Dengan batas integral dari ![image](https://github.com/user-attachments/assets/66ddc269-e6c9-4dd8-a3a3-8bc30eea2555)
+ ke ![image](https://github.com/user-attachments/assets/afb7fab4-e5d6-4f1d-9956-abd52f20f790)
+, nilai eksak integral ini adalah:
+
+![image](https://github.com/user-attachments/assets/9e3ef590-9578-4414-b9bd-e74988fbbb9a)
+
 
 ## 4. Penjelasan Algoritma
 
 ### A. Metode Trapezoidal
 Rumus:
-\[
-\int_a^b f(x) dx \approx \frac{h}{2} \left[ f(a) + 2 \sum_{i=1}^{n-1} f(x_i) + f(b) \right]
-\]
-- Kelemahan: error sebesar \( O(h^2) \)
-- Semakin kecil \( h \), semakin akurat, tapi membutuhkan banyak iterasi.
+
+![image](https://github.com/user-attachments/assets/da1226c5-a78f-4581-b746-4afb63aa2329)
+
+- Kelemahan: error sebesar ![image](https://github.com/user-attachments/assets/a1d3cdb4-dfaa-435b-8c09-799e697d7afe)
+)
+- Semakin kecil `( h )`, semakin akurat, tapi membutuhkan banyak iterasi.
 
 ### B. Metode Romberg
 - Memulai dengan hasil Trapezoidal.
 - Memperbaiki hasil dengan menggunakan **eksstrapolasi**:
-\[
-R_{i,j} = \frac{4^j R_{i,j-1} - R_{i-1,j-1}}{4^j - 1}
-\]
+
+![image](https://github.com/user-attachments/assets/e402abf9-8ec6-48e0-85e9-67a76c736b2b)
+
 - Tabel Romberg memperkirakan nilai integral dengan konvergensi cepat.
 
 ## 5. Implementasi Program (Sorotan)
