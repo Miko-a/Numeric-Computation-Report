@@ -16,17 +16,19 @@ Metode Regula Falsi menggunakan pendekatan linear antara dua titik untuk menemuk
 ---
 
 ## 3. Fungsi Contoh
-\[
-f(x) = x^2 - 2
-\]
-Fungsi ini memiliki akar di \( \sqrt{2} \approx 1.4142 \), karena \( f(\sqrt{2}) = 0 \).
+
+![image](https://github.com/user-attachments/assets/9365b597-27c2-4600-98e5-5ff90d7d6152)
+
+Fungsi ini memiliki akar di ![image](https://github.com/user-attachments/assets/a3f8bfc1-f9ff-4123-8639-c56336fbf9ff)
+, karena ![image](https://github.com/user-attachments/assets/f4c98391-d6c9-459f-aa89-9a7ea92614cd)
+.
 
 ---
 
 ## 4. Rumus Regula Falsi
-\[
-x = x_0 - \frac{(x_1 - x_0) \cdot f(x_0)}{f(x_1) - f(x_0)}
-\]
+
+![image](https://github.com/user-attachments/assets/610e85dd-34ba-4f80-b188-facec31329f1)
+
 
 Setiap iterasi:
 - Hitung nilai x baru
